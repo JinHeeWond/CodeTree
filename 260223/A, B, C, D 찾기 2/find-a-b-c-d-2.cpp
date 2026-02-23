@@ -13,11 +13,31 @@ int main() {
     // Please write your code here.
     sort(nums,nums+15);
     int A=nums[0];
-    int B=nums[1];
-    int C=nums[2];
-    int D=nums[14]-A-B-C;
+    int total = nums[14];
 
-    cout << A << " " << B << " " << C << " " << D;
+    for(int i=1; i<15; i++){
+        for(int j=i; j<15; j++){
+            int B=nums[i];
+            int C=nums[j];
+            int D=total-A-B-C;
+            if(!(A<=B && B<=C && C<=D)) continue;
 
-    return 0;
+           int need1 = A + B;
+            int need2 = A + C;
+            int need3 = A + B + C;
+
+            bool ok1 = false, ok2 = false, ok3 = false;
+
+            for (int t = 0; t < 15; t++) {
+                if (nums[t] == need1) ok1 = true;
+                if (nums[t] == need2) ok2 = true;
+                if (nums[t] == need3) ok3 = true;
+            }
+
+            if (!ok1 || !ok2 || !ok3) continue;
+
+            cout << A << " " << B << " " << C << " " << D;
+            return 0;
+        }
+    }
 }
