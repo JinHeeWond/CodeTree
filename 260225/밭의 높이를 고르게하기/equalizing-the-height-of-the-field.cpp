@@ -18,7 +18,7 @@ int main() {
 
     int answer=10000;
 
-    for(int i=0; i<N-T; i++){
+    for(int i=0; i<=N-T; i++){
         int cost=0;
         for(int j=0; j<T; j++){
             cost+=abs(arr[i+j]-H);
