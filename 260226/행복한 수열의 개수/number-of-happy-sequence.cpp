@@ -37,7 +37,7 @@ int main() {
         int run=1;
         happy=false;
         for(int j=1; j<n; j++){
-            if(grid[i][j]==grid[j-1][i])run++;
+            if(grid[j][i]==grid[j-1][i])run++;
             else run=1;
 
             if(run>=m) happy=true;
