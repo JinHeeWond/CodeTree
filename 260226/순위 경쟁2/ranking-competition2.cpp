@@ -16,7 +16,7 @@ int main() {
     int A=0;
     int B=0;
     int change=0;
-    int prevState=-1;
+    int prevState=2;
 
     for(int i=0; i<n; i++){
         if(c[i]=='A') A+=s[i];
