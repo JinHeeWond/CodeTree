@@ -23,8 +23,8 @@ int main() {
 
     for(int i=0; i<n; i++){
         int run=1;
-        happy=false;
-        for(int j=1; j<n; j++){
+        bool happy = (m <= 1);
+        for(int j=1; j<n && !happy; j++){
             if(grid[i][j]==grid[i][j-1])run++;
             else run=1;
 
@@ -35,8 +35,8 @@ int main() {
 
     for(int i=0; i<n; i++){
         int run=1;
-        happy=false;
-        for(int j=1; j<n; j++){
+        bool happy = (m <= 1);
+        for(int j=1; j<n && !happy; j++){
             if(grid[j][i]==grid[j-1][i])run++;
             else run=1;
 
