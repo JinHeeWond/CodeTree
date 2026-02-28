@@ -20,7 +20,7 @@ int main() {
 
     for(int r=0; r<n; r++){
         for(int c=0; c<n; c++){
-            for(int k=0; k<n; k++){
+            for(int k=0; k<100; k++){
                 int gold=0;
                 for(int i=0; i<n; i++){
                     for(int j=0; j<n; j++){
