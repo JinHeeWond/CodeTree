@@ -15,7 +15,7 @@ int main() {
     }
 
     // Please write your code here.
-    int ans=-1;
+    int ans=0;
 
     for(int r=0; r<n; r++){
         for(int c=0; c<n; c++){
