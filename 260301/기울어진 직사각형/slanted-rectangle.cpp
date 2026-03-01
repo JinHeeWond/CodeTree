@@ -33,22 +33,22 @@ int main() {
                     int sum=0;
                     int cr=r, cc=c;
 
-                    for(int i=0; i<d2; i++){
+                    for(int i=0; i<d1; i++){
                         sum+=grid[cr][cc];
                         cr++; cc++;
                     }
 
-                    for(int i=0; i<d1; i++){
+                    for(int i=0; i<d2; i++){
                         sum+=grid[cr][cc];
                         cr++; cc--;
                     }
                     
-                    for(int i=0; i<d2; i++){
+                    for(int i=0; i<d1; i++){
                         sum+=grid[cr][cc];
                         cr--; cc--;
                     }
 
-                    for(int i=0; i<d1; i++){
+                    for(int i=0; i<d2; i++){
                         sum+=grid[cr][cc];
                         cr--; cc++;
                     }
